@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+   <link rel="icon" href="/Home/Home-Page/assets/img/logo-version04.png" type="image/x-icon" />
+   <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/styleModal.css">
+   <title>ĐĂNG KÍ</title>
+
+   <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+   <div class="container">
+      <header>ĐĂNG KÝ</header>
+      <div class="progress-bar">
+         <div class="step">
+            <p>
+               TTCB
+            </p>
+            <div class="bullet">
+               <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               TTLL
+            </p>
+            <div class="bullet">
+               <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               XNDT
+            </p>
+            <div class="bullet">
+               <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+         <div class="step">
+            <p>
+               TTĐN
+            </p>
+            <div class="bullet">
+               <span>4</span>
+            </div>
+            <div class="check fas fa-check"></div>
+         </div>
+      </div>
+      <div class="form-outer">
+         <form action="#">
+            <div class="page slide-page">
+               <div class="title">
+                  Thông Tin Cơ Bản
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Mã cccd
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Điện Thoại
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <button class="firstNext next">Tiếp theo</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Thông Tin Liên Lạc
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Mã Xác Nhận
+                  </div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Tên
+                  </div>
+                  <input type="Number">
+               </div>
+               <div class="field btns">
+                  <button class="prev-1 prev">Trở lại</button>
+                  <button class="next-1 next">Tiếp theo</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Xác Nhận Danh Tính
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Ảnh Xác Thực
+                  </div>
+                  <!-- <input style="text-align: center;"  type="file" class="custom-file-input" > -->
+                  <label for="formFile" class="form-label"></label>
+                  <input class="form-control" type="file" id="formFile">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Vai Trò
+                  </div>
+                  <select>
+                     <option>Ý Tá Kiểm Tra Sức Khoẻ</option>
+                     <option>Bác Sĩ Kiểm Tra Sức Khoẻ</option>
+                     <option>Bác Sĩ Tiêm Vaccine</option>
+                  </select>
+               </div>
+               <div class="field btns">
+                  <button class="prev-2 prev">Trở lại</button>
+                  <button class="next-2 next">Tiếp theo</button>
+               </div>
+            </div>
+            <div class="page">
+               <div class="title">
+                  Thông Tin Đăng Nhập
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Mật Khẩu
+                  </div>
+                  <input type="password">
+               </div>
+               <div class="field">
+                  <div class="label">
+                     Xác Thực Mật Khẩu
+                  </div>
+                  <input type="password">
+               </div>
+               <div class="field btns">
+                  <button class="prev-3 prev">Trở lại</button>
+                  <button id="myBtn" type="button" class="submit" >Hoàn thành</button>
+                  <!-- id="trigger" -->
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <!-- modal -->
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+         <span class="close">&times;</span>
+          <h3>XÁC THỰC SỐ ĐIỆN THOẠI ĐỂ HOÀN THÀNH ĐĂNG KÍ</h3>
+          <p>Mã Xác Thực Được Gửi Qua Số Điện Thoại 0532786331</p>
+          <div class="codeConfrim">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+            <input class="inputCode" type="text" name="" id="" placeholder="">
+          </div>
+          <div class="bntModal">
+            <button class="btnclose" type="button" >Thoát</button>
+            <button class="btnDone" type="button" >Xác Thực</button>
+          </div>
+   </div>
+
+   <script src="/script.js"></script>
+</body>
+
+</html>
